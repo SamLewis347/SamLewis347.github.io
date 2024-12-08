@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Sam Lewis | Software Developer Crafting Cool, Creative Solutions</title> <!--title-->
+
+        <!--stuff to handle the favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
+        <!--meta tags-->
+        <meta name="description" content="Sam Lewis is a creative software developer exploring web development and AI, leveraging computers to create cool creative solutions to problems and ideas. Sam is currently a computer science student at Florida Southern College.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--linking the custom css rules that style the page-->
+        <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+
+        <!--linking the bvambient stylesheet for the background-->
+        <link rel="stylesheet" type="text/css" href="/css/bvambient.css">
+        
+    </head>
+    <body>
+
+        <!--ambient div that generates the background-->
+        <div id="ambient" style="overflow: hidden; position:fixed; width:100%; height:100%;"></div>
+
+        <!--main content of the webpage-->
+        <main>
+
+            <!--custom navbar-->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <!--navbar brand image-->
+                    <a class="logo" id="collapse">
+                        <img src="/assets/favicon_io/android-chrome-192x192.png" alt="laptop with a little car on the screen">
+                    </a>
+                    <!--navigation links-->
+                    <ul class="navbar-links" id="navbar-links">
+                        <li><a href="/pages/index.html">Home</a></li>
+                        <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="/pages/resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--introduction section grid-->
+            <div class="title-grid-container">
+                <div class="title">
+                    <h1>SAM LEWIS</h1>
+                </div>
+                <div class="subtitle">
+                    <h2>Creative Software Developer, Web and AI Explorer.</h2>
+                </div>
+                <div class="portrait">
+                    <img src="/assets/portrait.JPEG" alt="A professional picture of Sam">
+                </div>
+            </div>
+
+            <!--about me section grid-->
+            <div class="about-me-grid-container">
+                <div class="about-me-header" style="color: white">
+                    <h3>> About Me</h3>
+                </div>
+                <div class="about-me-text" style="color: white">
+                    <p>
+                        My name is Sam Lewis, I am a computer science student at Florida Southern College currently exploring Web Developement as well as Artificial Intelligence and Machine Learning.
+                        I also have a passion for hardware and electronics, and have gained both a wide and varied skill set throughout my time in college. 
+                    </p>
+                    <i>
+                        With a passion for computing, on both the software and hardware sides, I have developed skills through my exploration of computer science at FSC. I have become very familiar with programming languages
+                        such as Python, Java, C++, HTML, CSS, and JavaScript, as well as industry standard tools for development such as VSCode, Netbeans, and Arduino IDE. These skills combined with a passion for learning, solving fun and exciting problems,
+                        and working with others, positions me as a valuble asset in development, as well as other team-driven settings.
+                    </i>
+                </div>
+            </div>
+
+            <!--timeline section grid-->
+            <div class="timeline-grid-container">
+                <div class="timeline-header">
+                    <h3>> Timeline</h3>
+                    <p>A Brief Overview of my professional and academic career.</p>
+                </div>
+                <!--stuff to make the timeline of events in my career so far-->
+                <div class="timeline-wrapper">
+                    <div class="timeline-container">
+                        <div class="timeline-entry">
+                            <b>Celebration<br>High School</b><br>
+                            <span>First Encounter With Computer Science</span><br>
+                            <span class="timeline-date-text">August 2020 - May 2021</span><br>
+                            <button class="toggle-button">Show Additional Content</button>
+                            <p class="additionalContent" style="display:none;">During my junior year of high school, I took my first computer science class.<br>This was when I first became interested in the field of cs,<br>and I would later select this as my college major during my senior year.</p>
+                        </div>
+                        <div class="timeline-entry">
+                            <b>Enrollment in<br>Florida Southern College</b><br>
+                            <span>Began Undergraduate Study of Computer Science</span><br>
+                            <span class="timeline-date-text">August 2022</span><br>
+                            <button class="toggle-button">Show Additional Content</button>
+                            <p class="additionalContent" style="display:none;">I began my study of Computer Science during the fall semester of 2022,<br>after enrolling at Florida Southern College.</p>
+                        </div>
+                        <!--more entries to come soon-->
+                    </div>
+                </div>
+                <div class="timeline-image">
+                    <img src="/assets/hourglass-icon.png" alt="An icon of a hourglass">
+                </div>
+            </div>
+
+            <!--contact me grid-->
+            <div class="contact-me-grid-container">
+                <div class="contact-me-header">
+                    <h3>> Contact Me</h3>
+                </div>
+                <div class="contact-me-content">
+                    <p>If you would like to get in touch with me, you can send me an email at <strong>samuellewis92@icloud.com</strong></p>
+                    <p>Alternatively, you can check me out on <a href="https://github.com/SamLewis347" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+
+            <!--spacer to leave room at the bottom of the page-->
+            <div class="spacer" style="height: 4rem;"></div>
+
+        </main>
+        
+        <!--calling the framework script for the bvambient dynamic particle background-->
+        <script src="/src/bvambient.js"></script>
+
+        <!--script I wrote using the bvambient framework generates the particle background you see on the page-->
+        <script src="/src/background.js"></script>
+
+        <!--calling the general script that applies to all pages of the website-->
+        <script src="/src/script.js"></script>
+
+        <!--calling the script that handles the function of elements only on the homepage that need js-->
+        <script src="/src/homepage.js"></script>
+        
+    </body>
+</html>
