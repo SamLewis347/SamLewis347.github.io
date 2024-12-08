@@ -14,7 +14,7 @@ var pdfIframe = document.getElementById("pdfIframe");
 openModalLink.onclick = function(event) {
     event.preventDefault();
     modal.style.display = "block";
-    pdfIframe.src = "sam-lewis-resume.pdf"; // Specify the path to your PDF
+    pdfIframe.src = "/sam-lewis-resume.pdf"; // Specify the path to your PDF
 }
 
 // When the user clicks on <span> (x), close the modal
