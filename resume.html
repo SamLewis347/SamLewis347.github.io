@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Sam Lewis | Software Developer Crafting Cool, Creative Solutions</title> <!--title-->
+
+        <!--stuff to handle the favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
+        <!--meta tags-->
+        <meta name="description" content="Sam Lewis is a creative software developer exploring web development and AI, leveraging computers to create cool creative solutions to problems and ideas. Sam is currently a computer science student at Florida Southern College.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--linking the custom css rules that style the page-->
+        <link rel="stylesheet" type="text/css" href="/css/resume.css">
+
+        <!--linking the bvambient stylesheet for the background-->
+        <link rel="stylesheet" type="text/css" href="/css/bvambient.css">
+
+    </head>
+    <body>
+        
+        <!--ambient div that generates the background-->
+        <div id="ambient" style="overflow: hidden; position:fixed; width:100%; height:100%;"></div>
+
+        <!--main content of the portfolio page-->
+        <main>
+
+            <!--custom navbar-->
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <!--navbar brand image-->
+                    <a class="logo" id="collapse">
+                        <img src="/assets/favicon_io/android-chrome-192x192.png" alt="laptop with a little car on the screen">
+                    </a>
+                    <!--navigation links-->
+                    <ul class="navbar-links" id="navbar-links">
+                        <li><a href="/pages/index.html">Home</a></li>
+                        <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="/pages/resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!--resume grid-->
+            <div class="resume-grid-container">
+                <div class="resume-header">
+                    <h3>> Resume</h3>
+                </div>
+                <div class="resume-text">
+                    <p>
+                        <strong>SAM LEWIS<br></strong>
+                        <br>
+                        <br>
+                        <strong>TECHNICAL EXPERIENCE AND PROJECTS:</strong><br>
+                        <br>
+                        - Created a rudimentary Turn-Based chess using Pythons Turtle Graphics<br>
+                        - Created an imitation ordering system for a fake restaurant in Java<br>
+                        - Created an implementation of Christofides Algorithm in Java<br>
+                        - Designed and built an RC car capable of speeds up to 17mph using Arduino<br>
+                        - Front-end lead for a team software engineering project, creating an app that can track<br>
+                        and valuate a user’s collection of Pokémon TCG cards.<br>
+                        - Designed and developed a personal portfolio website<br>
+                        <br>
+                        <br>
+                        <strong>LANGUAGES AND TECHNOLOGIES:</strong><br>
+                        <br>
+                        Languages:<br>
+                        - Java, Python, C++, HTML, CSS, JavaScript<br>
+                        Technologies:<br>
+                        - Visual Studio Code, Apache NetBeans, Arduino IDE<br>
+                        <br>
+                        <br>
+                        <strong>ADDITIONAL EXPERIENCE AND AWARDS:</strong><br>
+                        <br>
+                        - 4th place in statewide Florida Science Fair two years in a row<br>
+                        - Multi-time all county jazz drummer<br>
+                        - Envision Leadership Conference Attendee<br>
+                        <br>
+                        <br>
+                        <strong>EMPLOYMENT:</strong><br>
+                        <br>
+                        Summer 2022: NuLeaf Landscaping Company<br>
+                        - Worked as a landscape crew assistant as well as independently maintaining the dog<br>
+                        trash cans placed all around the town of Celebration<br>
+                        Summer 2023: McDonalds:<br>
+                        - Worked in customer-facing roles such as the counter and the drive-through, this grew<br>
+                        my ability to communicate, the ability to work within a team, as well as my problem-<br>
+                        solving skills. I was also looked at as a future manager during my one summer working<br>
+                        there.<br>
+                        Summer 2024: Campus Customs:<br>
+                        - This job placed me in a retail and warehouse setting, in another team setting. I was<br>
+                        responsible for a variety of tasks, the most notable being to learn the software<br>
+                        controlling the production machines and training other employees in their use, and the<br>
+                        occasional fix to IT related issues. This job continued to improve my problem-solving<br>
+                        skills, teamwork, and ability to communicate.<br>
+                        <br>
+                        <br>
+                        <strong>EDUCATION:</strong><br>
+                        <br>
+                        Florida Southern College:<br>
+                        - Cumulative GPA: 3.9<br>
+                        - Courses: Data Structures, Object Oriented Programming, Analysis of Algorithms,<br>
+                        Software Engineering, Combinatorial Game Theory, Computer Organization and<br>
+                        Architecture, Microcontroller Programming, Introduction to Web Development<br>
+                        - Currently Enrolled In: Introduction to Artificial Intelligence, Web Frameworks and<br>
+                        Architecture, Programming Languages<br>
+                        <br>
+                        <br>
+                        <strong>ADDITIONAL SKILLS</strong><br>
+                        <br>
+                        Communication, Problem Solving, Teamwork, Leadership, Analytical Skills<br>
+                    </p>
+                </div>
+                <div class="resume-subtext">
+                    <p>To view my full resume, please click <a href="#" id="openModalLink">here</a></p>
+                </div>
+                <div class="resume-image">
+                    <img src="/assets/scroll-icon.png" alt="An icon of a scroll">
+                </div>
+            </div>
+
+            <!--modal structure-->
+            <div id="pdfModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <iframe src="" id="pdfIframe" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+
+        </main>
+
+        <!--calling the framework script for the bvambient dynamic particle background-->
+        <script src="/src/bvambient.js"></script>
+
+        <!--script I wrote using the bvambient framework generates the particle background you see on the page-->
+        <script src="/src/background.js"></script>
+
+        <!--calling the general script that applies to all pages of the website-->
+        <script src="/src/script.js"></script>
+
+        <!--calling the script that handles the function of elements only on the homepage that need js-->
+        <script src="/src/resume.js"></script>
+        
+    </body>
+</html>
