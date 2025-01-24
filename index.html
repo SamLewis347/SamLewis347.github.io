@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--title-->
+        <title>Sam Lewis | Software Developer Crafting Cool, Creative Solutions</title>
+
+        <!--favicon stuff-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+        <!--meta tags-->
+        <meta name="description" content="Sam Lewis is a creative software developer exploring web development and AI, leveraging computers to create cool creative solutions to problems and ideas. Sam is currently a computer science student at Florida Southern College.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--linking the custom css rules that style the page-->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <!--main content of the webpage-->
+        <main>
+            <div class="container">
+                <div class="solid">
+                    <!--subheading placed above the heading displaying my name-->
+                    <h2>Samuel Lewis</h2>
+                    <!--brief description/heading describing my position-->
+                    <h1>Creative Software Developer, <br> Web and AI Explorer.</h1>
+                    <!--creating the outer card that will be in the center of the initial page-->
+                </div>
+                <div class="image"></div>
+
+                <div class="gallery">
+                    <div class="gallery-item active" style="background-image: url('/assets/rc-car-poster.png');">
+                        <a href="https://github.com/SamLewis347/Arduino-HC-05-RC-Car" target="_blank" class="gallery-link">
+                            <div class="text-overlay">
+                                <h2 class="gallery-title">HC-05 RC Car</h2>
+                                <p class="gallery-desc">17mph RC Racecar</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" style="background-image: url('/assets/pokemon-tcg-database.png');">
+                        <a href="https://github.com/QuadeLeonard211/PokemonTCGDatabase" target="_blank" class="gallery-link">
+                            <div class="text-overlay">
+                                <h2 class="gallery-title">PokemonTCG Database</h2>
+                                <p class="gallery-desc">Track and valuate your personal Pokemon collection</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://github.com/SamLewis347" target="_blank" class="gallery-link">
+                            <div class="text-overlay">
+                                <h2 class="gallery-title">Check Out My Other Projects</h2>
+                                <p class="gallery-desc">Other, smaller, projects and involvements are on my GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--spacer-->
+            <div class="spacer" style="height: 4rem;"></div>
+
+            <div class="about-me-container">
+                <div class="about-me-image">
+                    <img src="/assets/sam-headshot.JPEG" alt="Portrait">
+                </div>
+                <div class="about-me-card">
+                    <h2>About Me</h2>
+                    <p>I am a software developer exploring web development and AI, leveraging computers to create cool and creative solutions to problems and ideas. I am currently a computer science student at Florida Southern College.<br>
+                        <br>
+                        <i>
+                        With a passion for computing, on both the software and hardware sides, I have developed skills through my exploration of computer science at FSC. I have become very familiar with programming languages
+                        such as Python, Java, C++, HTML, CSS, and JavaScript, as well as industry standard tools for development such as VSCode, Netbeans, and Arduino IDE. These skills combined with a passion for learning, solving fun and exciting problems,
+                        and working with others, positions me as a valuble asset in development, as well as other team-driven settings.
+                        </i> 
+                    </p>
+                </div>
+            </div>
+
+             <!--spacer-->
+             <div class="spacer" style="height: 4rem;"></div>
+
+             <div class="information-container">
+                <div class="information-card">
+                    <h2>My Information</h2>
+                    <p>
+                        Feel free to reach out to me with any questions, comments, or concerns. I am always looking for new opportunities and connections.<br>
+                        <i>Email is most effective, but I can also be reached by call or text.</i><br>
+                        <br>
+                        <strong>Name:</strong> Samuel Lewis<br>
+                        <strong>Location:</strong> Celebration and Lakeland FL, United States<br>
+                        <strong>Email:</strong> samuellewis92@icloud.com<br>
+                        <strong>Phone:</strong> 863-899-2796<br>
+                        <br>
+                        <button class="show-resume-button" id="openModalButton">View Resume</button><br>
+                    </p>
+                </div>
+                <div class="information-image"></div>
+             </div>
+
+             <div id="pdfModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <iframe src="" id="pdfIframe" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+
+             <!--spacer-->
+             <div class="spacer" style="height: 4rem;"></div>
+        </main>
+
+        <script src="/src/scripts.js"></script>
+    </body>
+</html>
